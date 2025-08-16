@@ -1,0 +1,72 @@
+/* Task Item */
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Square Checkbox */
+.squareCheck {
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  border: 2px solid #555;
+  cursor: pointer;
+}
+.squareCheck:checked {
+  background-color: #14532d;
+}
+
+/* Edit / Delete Buttons */
+.btnGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit {
+  color: #fbbf24;
+  cursor: pointer;
+}
+
+.delete {
+  color: #dc2626;
+  cursor: pointer;
+}
+
+.editInput {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.save {
+  color: #28a745;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.cancel {
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.completedText {
+  text-decoration: line-through;
+  color: gray;
+}

@@ -1,0 +1,33 @@
+{
+  "tasks": [
+    {
+      "id": "0964",
+      "text": "Dinner @ 6"
+    },
+    {
+      "id": "ae82",
+      "text": "Lunch",
+      "completed": true
+    },
+    {
+      "id": "441f",
+      "text": "Supper market to buy something",
+      "completed": false
+    },
+    {
+      "id": "1880",
+      "text": "Breakfast",
+      "completed": true
+    },
+    {
+      "id": "29ae",
+      "text": "Code",
+      "completed": true
+    },
+    {
+      "id": "7bc1",
+      "text": "Learn",
+      "completed": false
+    }
+  ]
+}

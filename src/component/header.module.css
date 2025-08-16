@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  background-image: url('../assets/leaves.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20%;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem 0;
+}

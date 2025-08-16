@@ -1,0 +1,25 @@
+To run both Vite + JSON Server together:
+
+Install concurrently:
+
+npm install -D concurrently
+
+
+Update package.json:
+
+"scripts": {
+  "dev": "concurrently \"vite\" \"npm run start:json-server\"",
+  "start:json-server": "json-server --watch db.json --port 5000",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+}
+
+
+Now:
+
+npm run dev
+
+
+✅ Runs Vite (frontend)
+✅ Runs JSON Server (backend mock API)
