@@ -1,12 +1,76 @@
-# React + Vite
+📝 React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Todo List App built with React, Axios, and JSON Server.
+It supports adding, editing, deleting, and marking tasks as pending or completed.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+➕ Add new tasks
 
-## Expanding the ESLint configuration
+✏️ Edit tasks (only if not completed)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+❌ Delete tasks
+
+✅ Mark tasks as completed (strike-through)
+
+⏳ View pending tasks
+
+📅 View all tasks under Today
+
+📦 Data is stored in a fake REST API using json-server
+
+🛠️ Tech Stack
+
+React + Vite – UI framework & dev server
+
+Axios – HTTP requests
+
+JSON Server – Fake REST API
+
+Concurrently – Run multiple commands in parallel
+
+📂 Project Setup
+1. Clone the repo
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+
+2. Install dependencies
+npm install
+
+3. Run the project
+
+Instead of running React and JSON Server separately, you can run both at once using concurrently:
+
+npm run dev
+
+
+This will:
+
+Start Vite (React app) on 👉 http://localhost:5173
+
+Start JSON Server on 👉 http://localhost:5000
+
+⚙️ JSON Server Setup
+
+Make sure you have a db.json file in the project root:
+
+{
+  "tasks": [
+    { "id": 1, "text": "Learn React", "completed": false },
+    { "id": 2, "text": "Setup JSON Server", "completed": true }
+  ]
+}
+
+
+
+✨ Future Improvements
+
+Add due dates for tasks
+
+Add user authentication
+
+Save tasks by category (work, personal, etc.)
+
+👩‍💻 Author
+
+Made with ❤️ by Ruth
